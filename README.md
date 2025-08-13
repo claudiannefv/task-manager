@@ -151,6 +151,7 @@ task-manager/
 - `POST /api/tasks` - Criar tarefa
 - `GET /api/tasks/:userId` - Listar tarefas do usuário
 - `PUT /api/tasks/:taskId` - Atualizar tarefa
+- `PATCH /api/tasks/:taskId` - Alterar status
 - `DELETE /api/tasks/:taskId` - Excluir tarefa individual
 - `DELETE /api/tasks/user/:userId` - Excluir todas as tarefas do usuário
 
