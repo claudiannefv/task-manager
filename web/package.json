@@ -1,0 +1,14 @@
+{
+  "name": "task-manager-web",
+  "version": "1.0.0",
+  "description": "Frontend do Task Manager (separado da API)",
+  "private": true,
+  "scripts": {
+    "start": "http-server public -p 3000"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
+
+

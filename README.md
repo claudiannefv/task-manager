@@ -130,16 +130,43 @@ npm run dev
 
 ## 🏗️ Estrutura do Projeto
 
+Este repositório agora está separado em dois projetos independentes:
+
 ```
 task-manager/
-├── public/                 # Arquivos do frontend
-│   ├── index.html         # Página principal
-│   ├── styles.css         # Estilos CSS
-│   └── script.js          # Lógica JavaScript
-├── server.js              # Servidor Express
-├── package.json           # Dependências e scripts
-└── README.md             # Documentação
+├── api/                  # Projeto da API (Node.js/Express)
+│   ├── server.js
+│   ├── package.json
+│   └── README.md
+├── web/                  # Projeto do Frontend estático
+│   ├── public/
+│   │   ├── index.html
+│   │   ├── styles.css
+│   │   └── script.js
+│   ├── package.json
+│   └── README.md
+└── package.json          # Scripts utilitários da raiz
 ```
+
+### Como rodar
+
+1) API
+
+```
+cd api
+npm install
+npm run dev
+```
+
+2) Web
+
+```
+cd web
+npm install
+npm start
+```
+
+Por padrão, o frontend consumirá a API em `http://localhost:4000/api`. Você pode sobrescrever definindo `window.API_BASE_URL` em `web/public/index.html`.
 
 ## 🔧 API Endpoints
 
